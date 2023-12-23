@@ -11,7 +11,29 @@
     <header class="bg-light">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
-                
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/luzdesing-logo.png" alt="LuzDesignLogo">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link scrollto active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#products">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#contact">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" action="https://formspree.io/f/xeqyjbay" method="post" role="buscador">
+                        <input class="form-control me-2" type="search" name="search" placeholder="Producto" required>
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
