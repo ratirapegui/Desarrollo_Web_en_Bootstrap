@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto-Final-con-Bootstrap</title>
+</head>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/luzdesing-logo.png" alt="LuzDesignLogo">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link scrollto active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#products">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scrollto" href="#contact">Contactanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" action="https://formspree.io/f/xeqyjbay" method="post" role="buscador">
+                        <input class="form-control me-2" type="search" name="search" placeholder="Producto" required>
+                        <button class="btn btn-outline-info" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-light">
+        <!-- ======= Offers Section ======= -->
+        <section id="offers" class="carousel slide mt-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#offers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Promocion 1"></button>
+                <button type="button" data-bs-target="#offers" data-bs-slide-to="1" aria-label="Promocion 2"></button>
+                <button type="button" data-bs-target="#offers" data-bs-slide-to="2" aria-label="Promocion 3"></button>
+                <button type="button" data-bs-target="#offers" data-bs-slide-to="3" aria-label="Promocion 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-1A.jpg" class="d-block w-100" alt="Descuentos">
+                        </div>
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-1B.jpg" class="d-block w-100" alt="Sucursales">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-2A.jpg" class="d-block w-100" alt="Cuotas">
+                        </div>
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-2B.jpg" class="d-block w-100" alt="ECommerce">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-3A.jpg" class="d-block w-100" alt="Asesoramiento">
+                        </div>
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-3B.jpg" class="d-block w-100" alt="Obras">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-4A.jpg" class="d-block w-100" alt="Novedades">
+                        </div>
+                        <div class="col-12 col-md-6 p-0">
+                            <img src="./assets/images/offers/carousel-slide-4B.jpg" class="d-block w-100" alt="Envios">
+                        </div>
+                    </div>
+                </div>
+                </div>              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#offers" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#offers" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section><!-- End Offers Section -->
+
+        <!-- ======= Products Section ======= -->
+        <section id="products">
+            <div class="container-fluid mt-3">
+                <h2 class="row text-light bg-dark py-3 justify-content-center">Productos</h2>
+            </div>
+            <div class="container px-4 px-md-5 mt-5">
+                <div class="row gx-4 gx-md-5 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/ceiling_lamps/lamp1.jpg" alt="Araña Plafon Colgante" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Araña Plafon Colgante Lyon 3 Luces Curvo Cairel Dorado</h5>
+                                <span class="text-muted text-decoration-line-through">$149.834</span>
+                                $134.855
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/standing_lamps/lamp1.jpg" alt="Lampara De Pie Oksana" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Lampara De Pie Oksana Pantalla Negra Regulable Led</h5>
+                                $182.709
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/table_lamps_and_nightstands/lamp1.jpg" alt="Lampara Velador Led" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Lampara Velador Led Moderno Carga Celular</h5>
+                                $210.715
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/wall_lamps/lamp1.jpg" alt="Aplique World Dorado" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Aplique World Dorado Apto Led Pared Deco Globo Opal</h5>
+                                <span class="text-muted text-decoration-line-through">$93.004</span>
+                                $83.704
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-md-5 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/ceiling_lamps/lamp2.jpg" alt="Colgante Chipre" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Colgante Chipre 2 Cobre Madera Apto Led Diseño</h5>
+                                $122.304
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/standing_lamps/lamp2.jpg" alt="Lampara De Pie Acero" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Lampara De Pie Acero 2 Luces Globo Opal Apto Led</h5>
+                                <span class="text-muted text-decoration-line-through">$163.979</span>
+                                $134.855
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/table_lamps_and_nightstands/lamp2.jpg" alt="Lampara Velador Saturno" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Lampara Velador Saturno Negro Led Carga</h5>
+                                $129.342
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="./assets/images/wall_lamps/lamp2.jpg" alt="Aplique Pared Luz Led" />
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">Aplique Pared Luz Led 3 Luces 15w Moderno Baño Negro</h5>
+                                $107.545
+                            </div>
+                            <div class="card-footer text-center bg-transparent">
+                                <a class="btn btn-outline-dark" href="#products">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Products Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact">
+            <div class="container-fluid mt-3">
+                <h2 class="row text-light bg-dark py-3 justify-content-center">Contactanos</h2>
+            </div>
+            <div class="container px-4 px-md-5 mt-5">
+                <div class="row gx-4 gx-md-5 row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26243.518703488597!2d-58.42666678916015!3d-34.6940846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a332b58b1a401d%3A0x512826ecd252748b!2sLuz%20Desing%20Lan%C3%BAs!5e0!3m2!1ses!2sar!4v1685911665925!5m2!1ses!2sar" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">LANÚS</h5>
+                                Av. Hipólito Yrigoyen 3301 – Lanús
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.556260565306!2d-58.43369562229001!3d-34.6097715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca676048bdbb%3A0x7e8551ec11a0f68c!2sLuz%20Desing%20Almagro!5e0!3m2!1ses!2sar!4v1685910531852!5m2!1ses!2sar" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">ALMAGRO</h5>
+                                Gascón 226 – CABA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26272.511372579473!2d-58.501392189160164!3d-34.602545099999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ffc9295555%3A0xc5aa2496f24f7426!2sLuz%20Desing%20Paternal!5e0!3m2!1ses!2sar!4v1685910591633!5m2!1ses!2sar" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">PATERNAL</h5>
+                                San Martín 2801 – CABA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26265.45794802211!2d-58.44566178916014!3d-34.62483459999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb9fb484250b%3A0xe02fad9c7dddee00!2sLUZ%20DESING%20BOEDO!5e0!3m2!1ses!2sar!4v1685910607536!5m2!1ses!2sar" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <div class="card-body text-center">
+                                <h5 class="fw-bolder">BOEDO</h5>
+                                San Juan 3158 – CABA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/xeqyjbay" method="post" role="contacto">
+                    <div class="row gx-4 gx-md-5 justify-content-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <div class="form-floating mb-2">
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required>
+                                <label class="form-label" for="name">Nombre</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
+                                <label class="form-label" for="email">Email</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input class="form-control" type="text" name="subject" id="subject" placeholder="Asunto" required>
+                                <label class="form-label" for="subject">Asunto</label>
+                            </div>
+                            <div class="form-floating mb-2">
+                                <input class="form-control" type="text" name="telephone" id="telephone" placeholder="Telefono" required>
+                                <label class="form-label" for="telephone">Telefono</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 text-center mb-2">
+                            <textarea class="form-control" id="message" placeholder="Mensaje" rows="10" required></textarea>
+                        </div>
+                        <div class="col-12 text-center mb-2">
+                            <button class="btn btn-outline-info" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section><!-- End Contact Section -->
+    </main>
+    <footer class="bg-light">
+        <div class="container-fluid mt-3">
+            <div class="row bg-dark py-3 justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                    <p class="text-light bg-dark m-0">Luz Desing Copyright © 2023 - Todos los derechos reservados</p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <p class="text-light bg-dark m-0">Diseño y desarrollo - Rodrigo Tirapegui</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
